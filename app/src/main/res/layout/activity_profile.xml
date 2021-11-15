@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="@dimen/standard_margin"
-    tools:context=".MainActivity">
+    tools:context=".ProfileActivity">
 
     <include
         android:id="@+id/mainToolBar"
@@ -18,44 +17,46 @@
         />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/userNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/add_a_restaurant"
+        tools:text="Aristole"
         android:textSize="@dimen/heading_font_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/mainToolBar" />
+        app:layout_constraintTop_toBottomOf="@+id/mainToolBar" />
 
-    <EditText
-        android:id="@+id/restaurantEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:hint="@string/enter_restaurant_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="@dimen/standard_margin"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/restaurantEditText"
-        android:layout_marginTop="@dimen/standard_margin"
-        android:entries="@array/ratings" />
-
-    <Button
-        android:id="@+id/button"
+    <TextView
+        android:id="@+id/emailTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/add_restaurant"
+        tools:text="philosopher@theory.com"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"
-        android:layout_marginTop="@dimen/standard_margin"/>
+        app:layout_constraintTop_toBottomOf="@+id/userNameTextView" />
+
+    <TextView
+        android:id="@+id/termsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="20"
+        android:scrollbars="vertical"
+        android:text="@string/terms"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/standard_margin"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/logoutFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/standard_margin"
+        app:srcCompat="@drawable/ic_baseline_exit_to_app_24"
+        android:focusable="true" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
