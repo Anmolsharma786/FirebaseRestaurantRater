@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "55054574668",
+    "project_id": "fir-restaurantrater-89dd5",
+    "storage_bucket": "fir-restaurantrater-89dd5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55054574668:android:8e918ad3125143f7dac0e9",
+        "android_client_info": {
+          "package_name": "com.example.firebaserestaurantrater"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55054574668-lf3enhic2j9eeh5lk224it5p8aip7vjv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwuU44-U3LFHzAVyO7GNLIR5-NFGrT6R0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "55054574668-lf3enhic2j9eeh5lk224it5p8aip7vjv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
