@@ -8,7 +8,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.GC1234.f21restaurantrater"
+        applicationId "com.example.firebaserestaurantrater"
         minSdk 21
         targetSdk 31
         versionCode 1
@@ -16,11 +16,9 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
     buildFeatures{
         viewBinding true
     }
-
     buildTypes {
         release {
             minifyEnabled false
@@ -37,6 +35,7 @@ android {
 }
 
 dependencies {
+
     implementation 'androidx.core:core-ktx:1.6.0'
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'com.google.android.material:material:1.4.0'
@@ -53,14 +52,4 @@ dependencies {
 
     //This is for the recycler view
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
-
-    //This is used for Firebase Authentication
-    implementation 'com.firebaseui:firebase-ui-auth:7.2.0'
-
-    // Import the BoM for the Firebase platform
-    implementation platform('com.google.firebase:firebase-bom:28.4.2')
-
-    // Declare the dependency for the Firebase Authentication library
-    // When using the BoM, you don't specify versions in Firebase library dependencies
-    implementation 'com.google.firebase:firebase-auth-ktx'
 }
